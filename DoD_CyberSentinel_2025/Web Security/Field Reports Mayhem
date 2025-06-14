@@ -1,0 +1,14 @@
+Points: 150
+Difficulty: Easy
+
+Description:
+We've gained access to the Juche Jaguar’s Field Reports archive through an operative's use of weak credentials. Upon logging in, the operative sees their previous field reports and can file new ones. Somewhere in here, I am sure some 'leet' agent stashed the Supreme Leader's secret pizza discount code!
+
+the description contained a link to a site with a bunch of reports from different agents
+
+I really had no idea what to do here. I kept looking through the reports from the agent credentials the challenge gave me, but wasn't finding anything.
+I had to use a hint, and it told me to look into IDOR, which gave me the idea to check the page URL
+The URL contained a section for "id=xxxx"
+
+I started playing around with the ID and found other agent's reports, but still wasn't finding anything.
+The second hint gave it away though. It said the "leet" agent probably has an agent ID, which was 1337 and contained the flag.

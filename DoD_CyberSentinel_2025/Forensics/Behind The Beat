@@ -1,0 +1,8 @@
+Points: 75
+Difficulty: Very Easy
+
+Description:
+Agents intercepted an audio file named message.mp3. It plays a single tone, but we have intel that a flag might be tucked away in the metadata fields of the file. Can you inspect the file and uncover the flag?
+
+This one was, as the difficulty suggests, very easy.
+All I had to do was download an mp3 and analyze the metadata with exiftool and the flag was in plain sight.

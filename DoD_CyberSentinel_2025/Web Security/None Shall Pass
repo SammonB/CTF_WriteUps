@@ -4,13 +4,11 @@ Difficulty: Medium
 Description:
 Deep inside Juche Jaguar’s intranet runs a custom token‐based gateway protecting their most sensitive files at /secret. We got our hands on a low‐privilege account (user:pass = agent:spudpotato) - use it to request an access token, then find a way to trick the gateway into granting you full admin rights and pull down the hidden intelligence (the flag) from /secret. Good luck, Operative.
 
+
 This challenge has me go to a login screen and enter the credentials provided. this causes the site to display a jwt token for me to use.
 Honestly, I had no idea what to do with this. I tried messing around with the packets in burpsuite and adding a section for "authentication" and adding the token there, but that didn't work.
-
-I tried decoding the token in jwt.io, which gave me the information that the token was only for a user account, but I needed the jwt secret if I wanted to forge an admin version
-
+I tried decoding the token in jwt.io, which gave me the information that the token was only for a user account, but I figured I needed the jwt secret if I wanted to forge an admin version
 This is where i spent WAY too long trying to crack this jwt secret that most likely didn't even exist
 I tried using john and jwt tool to guess the secret and I wasted so much time on that
-
 In the end, all I had to do was look up a jwt token editor online, paste the token the site gave me, edit the role from "user" to "admin" and use curl to send the new token back to the site
 Why are things always simpler than I think they are?

@@ -2,8 +2,14 @@ Difficulty: Very Easy
 Points: 75
 
 Description:
-Our blue team intercepted a network capture file. It contains unencrypted HTTP traffic. While skimming through it, analysts believe someone accidentally exposed their login credentials in plain text. Review the PCAP to find the password that the user logged in with.
+Our blue team intercepted a network capture file. It contains unencrypted HTTP traffic. 
+While skimming through it, analysts believe someone accidentally exposed their login credentials in plain text. 
+Review the PCAP to find the password that the user logged in with.
 
 
 Probably the quickest one so far. 
-I downloaded the PCAP file, double clicked it, it opened in wireshark, then I just looked for one of the packets that had "login" on the info and the flag was right there
+I was given a Packet Capture (PCAP) file, so I already figured I was going to be using WireShark.
+Linux was already ahead of me, since the PCAP file automatically opened in WireShark.
+There were a bunch of packets in the file, and checking all of them would've probably been super time-consuming.
+But, since the description mentioned something about login credentials, I just clicked on the first one I saw with big "LOGIN" text in the header.
+And right inside it was the flag.

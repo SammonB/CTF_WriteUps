@@ -1,8 +1,14 @@
-Points: 150
 Difficulty: Easy
+Points: 150
 
-Description: We've intercepted a radio broadcast being bounced off a satellite likely intended for the North Torbian cells located around the world. Do you think you can unravel what they are transmitting?
+Description: 
+We've intercepted a radio broadcast being bounced off a satellite likely intended for the North Torbian cells located around the world. Do you think you can unravel what they are transmitting?
 
-Attached was an audio file with repetitions of two tones, a high tone and a low tone. I opened up the spectrogram in audacity so I could just read the tones instead of having to listen to them, and I decided to write down all the high tones as 1's and all the low tones as 0's and put them in a binary translator.
+Attached was an audio file with repetitions of two tones, a high tone and a low tone.
+I opened the file in audacity so I could examine it, although at this point I wasn't really sure what to do with it yet.
+The tones appeared too quickly for me to write them down in real time, and I felt that slowing the audio down would take too long.
+The audio waveform wasn't any help, so I ended up playing around in audacity and eventually switched to the spectrogram view, where the high and low tones were visually distinct.
+Then the process was just to write down all the high tones as 1's and all the low tones as 0's and put them in a binary translator.
 
-That spat out nothing so I tried flipping the bits and it worked, I got the flag easy peasy.
+The binary this method produced only translated to garbled ASCII, but after flipping all of the bits, it translated into the flag
+
